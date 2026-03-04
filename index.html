@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Age Calculator</title>
+    <link rel="manifest" href="manifest.webmanifest" />
+    <meta name="theme-color" content="#0f172a" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="app-header">
+        <div>
+          <h1>Age Calculator</h1>
+          <p class="subtitle">
+            Precise age, life stats, and next milestones.
+          </p>
+        </div>
+        <div class="header-actions">
+          <button id="themeToggle" type="button" aria-label="Toggle dark mode">
+            🌙
+          </button>
+          <button id="installPwaBtn" type="button" class="hidden">
+            Install App
+          </button>
+        </div>
+      </header>
+
+      <main>
+        <section class="card">
+          <h2>Enter your birth date</h2>
+          <form id="ageForm">
+            <div class="form-row">
+              <label for="birthDate">Birth date</label>
+              <input
+                id="birthDate"
+                name="birthDate"
+                type="date"
+                required
+                max=""
+              />
+            </div>
+            <div class="form-row">
+              <label for="timeZone">Time zone (optional)</label>
+              <select id="timeZone" name="timeZone">
+                <option value="">Use device time zone</option>
+                <option value="UTC">UTC</option>
+                <option value="America/New_York">America/New_York</option>
+                <option value="Europe/London">Europe/London</option>
+                <option value="Europe/Berlin">Europe/Berlin</option>
+                <option value="Asia/Kolkata">Asia/Kolkata</option>
+                <option value="Asia/Tokyo">Asia/Tokyo</option>
+                <option value="Australia/Sydney">Australia/Sydney</option>
+              </select>
+            </div>
+            <button type="submit" class="primary-btn">Calculate</button>
+          </form>
+          <p id="errorMessage" class="error"></p>
+        </section>
+
+        <section class="grid">
+          <article class="card">
+            <h2>Age breakdown</h2>
+            <div class="stat-row">
+              <span>Age in years</span>
+              <strong id="ageYears">–</strong>
+            </div>
+            <div class="stat-row">
+              <span>Age in months</span>
+              <strong id="ageMonths">–</strong>
+            </div>
+            <div class="stat-row">
+              <span>Age in days</span>
+              <strong id="ageDays">–</strong>
+            </div>
+            <div class="stat-row">
+              <span>Zodiac sign</span>
+              <strong id="zodiacSign">–</strong>
+            </div>
+          </article>
+
+          <article class="card">
+            <h2>Totals lived so far</h2>
+            <div class="stat-row">
+              <span>Total days lived</span>
+              <strong id="totalDays">–</strong>
+            </div>
+            <div class="stat-row">
+              <span>Total hours lived</span>
+              <strong id="totalHours">–</strong>
+            </div>
+            <div class="stat-row">
+              <span>Age on Mars (years)</span>
+              <strong id="ageMars">–</strong>
+            </div>
+          </article>
+
+          <article class="card">
+            <h2>Next birthday</h2>
+            <div class="stat-row">
+              <span>Date</span>
+              <strong id="nextBirthdayDate">–</strong>
+            </div>
+            <div class="stat-row">
+              <span>Countdown</span>
+              <strong id="nextBirthdayCountdown">–</strong>
+            </div>
+            <div class="stat-row">
+              <span>Next age</span>
+              <strong id="nextBirthdayAge">–</strong>
+            </div>
+          </article>
+
+          <article class="card">
+            <h2>Long-term milestones</h2>
+            <div class="stat-row">
+              <span>Days until 100 years</span>
+              <strong id="daysUntil100">–</strong>
+            </div>
+            <div class="progress-wrapper">
+              <div class="progress-label">
+                <span>Life progress (out of 100 years)</span>
+                <span id="lifeProgressLabel">0%</span>
+              </div>
+              <div class="progress-bar">
+                <div id="lifeProgressBar" class="progress-fill"></div>
+              </div>
+            </div>
+          </article>
+        </section>
+      </main>
+
+      <footer class="app-footer">
+        <p>
+          Calculations are approximate and for informational purposes only.
+        </p>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
