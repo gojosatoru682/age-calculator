@@ -270,6 +270,135 @@ select:focus {
   transition: width 0.4s ease-out;
 }
 
+.timeline-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.timeline-item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto auto;
+  gap: 0.1rem 0.5rem;
+  padding: 0.4rem 0.55rem;
+  border-radius: 999px;
+  background: radial-gradient(
+      140% 160% at 0% 0%,
+      rgba(56, 189, 248, 0.16),
+      transparent 55%
+    ),
+    rgba(15, 23, 42, 0.7);
+}
+
+.timeline-age {
+  font-weight: 600;
+  padding-inline: 0.5rem;
+}
+
+.timeline-label {
+  color: var(--text-soft);
+}
+
+.timeline-date {
+  grid-column: 1 / -1;
+  font-size: 0.8rem;
+  color: var(--text-soft);
+}
+
+.timeline-status {
+  justify-self: end;
+  font-size: 0.75rem;
+  padding: 0.1rem 0.5rem;
+  border-radius: 999px;
+  border: 1px solid rgba(148, 163, 184, 0.5);
+}
+
+.timeline-status.past {
+  background: rgba(34, 197, 94, 0.16);
+  border-color: rgba(34, 197, 94, 0.5);
+}
+
+.timeline-status.future {
+  background: rgba(56, 189, 248, 0.13);
+  border-color: rgba(56, 189, 248, 0.6);
+}
+
+.share-text {
+  margin: 0 0 0.75rem;
+  font-size: 0.9rem;
+  color: var(--text-soft);
+}
+
+.share-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.1rem;
+}
+
+.secondary-btn {
+  padding: 0.45rem 0.9rem;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--border-subtle);
+  background: var(--bg-elevated-soft);
+  color: var(--text);
+  font-size: 0.86rem;
+}
+
+.secondary-btn:hover {
+  background: var(--accent-soft);
+  color: var(--accent-strong);
+}
+
+.compare-block {
+  margin-top: 0.75rem;
+  border-top: 1px dashed rgba(148, 163, 184, 0.4);
+  padding-top: 0.75rem;
+}
+
+.compare-block h3 {
+  margin: 0 0 0.6rem;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-soft);
+}
+
+.full-width {
+  width: 100%;
+  justify-content: center;
+}
+
+.compare-result {
+  margin: 0.4rem 0 0;
+  font-size: 0.88rem;
+}
+
+.compare-result.subtle {
+  color: var(--text-soft);
+}
+
+.celebrity-matches {
+  font-size: 0.9rem;
+  color: var(--text-soft);
+}
+
+.celebrity-matches ul {
+  padding-left: 1.1rem;
+  margin: 0.4rem 0 0;
+}
+
+.birthday-message {
+  margin: 0 0 0.9rem;
+  font-size: 0.9rem;
+  color: var(--text-soft);
+}
+
 .app-footer {
   margin-top: 2.4rem;
   text-align: center;

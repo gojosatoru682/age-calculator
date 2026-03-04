@@ -81,8 +81,24 @@
               <strong id="ageMonths">–</strong>
             </div>
             <div class="stat-row">
+              <span>Age in weeks</span>
+              <strong id="ageWeeks">–</strong>
+            </div>
+            <div class="stat-row">
               <span>Age in days</span>
               <strong id="ageDays">–</strong>
+            </div>
+            <div class="stat-row">
+              <span>Age in hours</span>
+              <strong id="ageHours">–</strong>
+            </div>
+            <div class="stat-row">
+              <span>Age in minutes</span>
+              <strong id="ageMinutes">–</strong>
+            </div>
+            <div class="stat-row">
+              <span>Age in seconds (live)</span>
+              <strong id="ageSeconds">–</strong>
             </div>
             <div class="stat-row">
               <span>Zodiac sign</span>
@@ -137,6 +153,100 @@
                 <div id="lifeProgressBar" class="progress-fill"></div>
               </div>
             </div>
+          </article>
+
+          <article class="card">
+            <h2>Age timeline</h2>
+            <ul id="ageTimeline" class="timeline-list">
+              <!-- Filled dynamically -->
+            </ul>
+          </article>
+
+          <article class="card">
+            <h2>You have lived through</h2>
+            <div class="stat-row">
+              <span>FIFA World Cups since birth</span>
+              <strong id="worldCupsCount">–</strong>
+            </div>
+            <div class="stat-row">
+              <span>Leap years experienced</span>
+              <strong id="leapYearsCount">–</strong>
+            </div>
+          </article>
+
+          <article class="card">
+            <h2>Share & compare</h2>
+            <p id="shareCardText" class="share-text">
+              Calculate your age to generate a share card.
+            </p>
+            <div class="share-buttons">
+              <button id="copyLinkBtn" type="button" class="secondary-btn">
+                Copy link
+              </button>
+              <button id="shareWhatsAppBtn" type="button" class="secondary-btn">
+                Share on WhatsApp
+              </button>
+              <button id="shareTwitterBtn" type="button" class="secondary-btn">
+                Share on Twitter
+              </button>
+            </div>
+            <div class="compare-block">
+              <h3>Compare ages</h3>
+              <div class="form-row">
+                <label for="compareDate1">Person 1 birthday</label>
+                <input id="compareDate1" type="date" />
+              </div>
+              <div class="form-row">
+                <label for="compareDate2">Person 2 birthday</label>
+                <input id="compareDate2" type="date" />
+              </div>
+              <button id="compareBtn" type="button" class="secondary-btn full-width">
+                Compare ages
+              </button>
+              <p id="compareResultOlder" class="compare-result"></p>
+              <p id="compareResultDifference" class="compare-result subtle"></p>
+            </div>
+          </article>
+
+          <article class="card">
+            <h2>Age on planets</h2>
+            <div class="stat-row">
+              <span>Mercury years</span>
+              <strong id="ageMercury">–</strong>
+            </div>
+            <div class="stat-row">
+              <span>Venus years</span>
+              <strong id="ageVenus">–</strong>
+            </div>
+            <div class="stat-row">
+              <span>Mars years</span>
+              <strong id="ageMarsPlanets">–</strong>
+            </div>
+            <div class="stat-row">
+              <span>Jupiter years</span>
+              <strong id="ageJupiter">–</strong>
+            </div>
+            <div class="stat-row">
+              <span>Saturn years</span>
+              <strong id="ageSaturn">–</strong>
+            </div>
+          </article>
+
+          <article class="card">
+            <h2>Celebrity birthday match</h2>
+            <div id="celebrityMatches" class="celebrity-matches">
+              Enter your birth date to see matches.
+            </div>
+          </article>
+
+          <article class="card">
+            <h2>AI birthday message</h2>
+            <p id="birthdayMessage" class="birthday-message">
+              Calculate your age, then generate a personalized birthday wish.
+            </p>
+            <button id="generateWishBtn" type="button" class="primary-btn">
+              Generate birthday wish
+            </button>
           </article>
         </section>
       </main>
