@@ -1,19 +1,19 @@
 {
-  "name": "Age Calculator",
-  "short_name": "AgeCalc",
-  "description": "Precise age, life stats, milestones, and Mars age.",
+  "name": "Age Calculator — MyAgeFlow",
+  "short_name": "MyAgeFlow",
+  "description": "Instantly calculate your age in years, months, days, total days lived, next birthday countdown and more!",
   "start_url": ".",
   "display": "standalone",
   "background_color": "#020617",
   "theme_color": "#0f172a",
   "icons": [
     {
-      "src": "icon-192.png",
+      "src": "favicon.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "icon-512.png",
+      "src": "favicon.png",
       "sizes": "512x512",
       "type": "image/png"
     }
