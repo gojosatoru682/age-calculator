@@ -355,6 +355,18 @@ select:focus {
   color: var(--accent-strong);
 }
 
+.secondary-btn-icon {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.secondary-btn-icon .icon {
+  width: 16px;
+  height: 16px;
+  display: block;
+}
+
 .compare-block {
   margin-top: 0.75rem;
   border-top: 1px dashed rgba(148, 163, 184, 0.4);
